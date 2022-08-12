@@ -1,0 +1,387 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    width: 367px;
+    height: 100vh;
+    background-color: rgb(217, 199, 159);
+    float: left;
+    padding-top: 75px;
+}
+main{
+    width: calc(100% - 367px);
+    height: 100vh;
+    background-color: rgb(252, 247, 235);
+    float: right;
+    position: relative;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-bottom: 60px;
+
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace ;
+    text-align: center;
+    padding-top: 35px;
+    color: rgb(111, 93, 69);
+}
+.links{
+    margin: auto;
+    width: 150px;
+}
+a{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.container{
+    width: 955px;
+    height: 570px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+}
+.container > div{
+    width: 315px;
+    height: 570px;
+    background-color: wheat;
+    float: left;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+.x{
+    background-image: url('./pic/x.png');
+    background-size: 350%;
+    background-position: 65% 25%;
+}
+.y{
+    background-image: url('./pic/y.jpeg');
+    background-size: 290%;
+    background-position: 55% 55% ;
+    margin:0px 5px ;
+}
+.z{
+    background-image: url('./pic/z.jpeg');
+    background-position: 55% 80%;
+    background-size: 250%;
+}
+.x:hover{
+    background-size: 350%;
+    background-position: 55% 30%;
+}
+.y:hover{
+    background-size: 300%;
+    background-position: 85% 50%;
+}
+.z:hover{
+    background-position: 35% 50%;
+    background-size: 175%;
+}
+
+@media (max-width:1400px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    nav{
+        width: 367px;
+        height: 100vh;
+        background-color: rgb(217, 199, 159);
+        float: left;
+        padding-top: 65px;
+    }
+    main{
+        width: calc(100% - 367px) ;
+        height: 100vh;
+        background-color: rgb(252, 247, 235);
+        float: right;
+        position: relative;
+    }
+
+    .logo{
+        width: 150px;
+        height: 150px;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        margin-bottom: 40px;
+
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        padding-top: 35px ;
+        color: rgb(111, 93, 69);
+    }
+    .links{
+        margin: auto;
+        width: 150px;
+    }
+    a{
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+        /* background-color: aliceblue; */
+        padding: 5px 0px;
+        
+        color: white;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container{
+        width: 800px;
+        height: 569px;
+        background-color: white;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate( -50% , -50%);
+    }
+
+    .container .x{
+        width: 800px;
+        height: 284px;
+        background-color: wheat;
+        
+        float: left;
+        background-repeat: no-repeat;
+        transition: 1s;
+    }
+
+    .container .y{
+            width: 395px;
+            height: 275px;
+            background-color: wheat;
+            
+            float: left;
+            background-repeat: no-repeat;
+            transition: 1s;
+            margin: 0px;
+    }
+    .container .z{
+        width: 395px;
+        height: 275px;
+        background-color: wheat;
+        
+        float: right;
+        background-repeat: no-repeat;
+        transition: 1s;
+}
+    .x{
+        background-image: url('./pic/x.png');
+        background-size: 120%;
+        background-position: 100% 20%;
+        margin-bottom: 10px;
+    }
+    .y{
+        background-image: url('./pic/y.jpeg');
+        background-size: 120%;
+        background-position: 60% 40%;
+    }
+    .z{
+        background-image: url('./pic/z.jpeg');
+        background-size: 100%;
+        background-position: 100% 100%;
+    }
+    .x:hover{
+        background-size: 350%;
+        background-position: 55% 30%;
+    }
+    .y:hover{
+        background-size: 300%;
+        background-position: 85% 50%;
+    }
+    .z:hover{
+        background-position: 35% 50%;
+        background-size: 175%;
+    }
+}
+
+@media (max-width:1200px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    nav{
+        width: 100%;
+        height: 100px;
+        background-color: rgb(217, 199, 159);
+        padding: 10px 35px;
+    }
+    
+    .logo{
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        float: left;
+    
+        font-size: 14px;
+        font-family:'Courier New', Courier, monospace ;
+        text-align: center;
+        padding-top: 20px;
+        color: rgb(111, 93, 69)
+    }
+    .links{
+        /* background-color: aliceblue; */
+        float: right;
+        height: 100%;
+        margin: 0px;
+        width: unset;
+    }
+    a{
+        line-height: 80px;
+        margin-left: 40px;
+        color: white;
+        display: unset;
+    }    
+    main{
+        width: 100%;
+        padding: 50px 35px 75px;
+    }
+    
+    .container{
+        width: 100%;
+        height: 800px;
+        background-color: white;
+    }
+    
+    .container .x{
+        width: 100%;
+        height: 400px;
+        float: left;
+        margin-bottom: 10px;
+        background-color: wheat;
+    }
+    .container .y{
+        width: calc( 50% - 5px );
+        height: calc( 50% - 10px );
+        float: left;
+        background-color: wheat;
+    }
+    .container .z{
+        width: calc( 50% - 5px );
+        height: calc( 50% - 10px) ;
+        float: right;
+        background-color: wheat;
+    }
+    .x:hover{
+        background-size: 350%;
+        background-position: 55% 30%;
+    }
+    .y:hover{
+        background-size: 300%;
+        background-position: 85% 50%;
+    }
+    .z:hover{
+        /* background-image: url('./img/goose.jpg'); */
+        background-position: 35% 50%;
+        background-size: 175%;
+    }
+}
+
+@media(max-width:550px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    nav{
+        width: 100%;
+        height: 80px;
+        background-color: rgb(217, 199, 159);
+        padding: 12px 18px;
+        position: relative;
+    }
+    
+    .logo{
+        width: 56px;
+        height: 56px;
+        background-color: white;
+        position: absolute;
+        top: calc(50% - 28px);
+        left: calc(50% - 28px);
+    
+        font-size: 14px;
+        font-family:'Courier New', Courier, monospace ;
+        text-align: center;
+        padding-top: 10px;
+        color: rgb(79, 66, 48)
+    }
+    
+    .links{
+        width: 40px;
+        height: 50px;
+        background-color: rgb(120, 107, 80);
+        float: left;
+    }
+    .links:hover{
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        background-color: white;
+    }
+    a{
+        display: none;
+        /* 要讓導覽列上的文字消失
+         使用 display:none 讓元素在畫面上消失 */
+    
+         color: rgb(117, 103, 70);
+         font-size: 14px;
+         line-height: 20px;
+         font-family: Arial, Helvetica, sans-serif;
+         margin: 0px;
+    
+    }
+    
+    .links:hover > a{
+        display: inline;
+    }
+    
+    main{
+        width: 100%;
+        min-height: calc(100vh - 80px );
+        background-color: wheat ;
+        padding: unset;
+        position: unset;
+        margin: unset;
+    }
+
+    .container{
+        width: 100%;
+        height: 667px;
+        background-color:  white;
+        margin: unset;
+        padding: unset;
+        transform: unset;
+        position: unset;
+    }
+    .container .x{
+        width: 100%;
+        height: calc(100% / 3) ;
+        background-color: wheat;
+        margin: 0px;
+    }
+    .container .y{
+        width: 100%;
+        height: calc(100% / 3) ;
+        background-color: wheat;
+    }
+    .container .z{
+        width: 100%;
+        height: calc(100% / 3) ;
+        background-color: wheat;
+    }
+}    
